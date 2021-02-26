@@ -294,10 +294,9 @@ hr {
 .product-box {
     overflow: auto;
     width: 25%;
-    margin: 10px;
+    margin: 20px;
     display: inline-block;
     background-color: white;
-    
     padding: 20px;
 }
 
@@ -331,26 +330,6 @@ hr {
 *  Featured Product Settings        *
 ************************************/
 
-.featured-product {
-    background-color: #F3F5F6;
-    margin: 20px auto;
-}
-
-.featured-product::after {
-    content: "";
-    clear: both;
-}
-
-.featured-product>div {
-    width: 40%;
-    margin: auto;
-}
-
-.featured-product img {
-
-    margin: auto;
-}
-
 .product-info {
     border-left: 1px solid black;
     padding-left: 3rem;
@@ -367,13 +346,6 @@ hr {
     margin-bottom: 3rem;
 }
 
-
-
-
-
-
-
-/* Featured Products  */
 
 .row {
     width: 100%;
@@ -440,4 +412,24 @@ footer input[type="submit"]:hover {
 
 footer input[type="submit"]:active {
     background-color: #0098b3;
+}
+
+/****************************
+*  Footer Settings ENDS     *
+****************************/
+
+/****************************
+*  Book Facts Settings      *
+****************************/
+
+.book-facts {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.category-title-group {
+    padding-left: 30px;
+    background-color: #F3F5F6;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
