@@ -1,7 +1,33 @@
-body {
+/**********************
 
+
+
+ The main CSS Style for all elements which are used in projects are present here
+
+ 1) Top-bar: The top bar which some important info shows 
+ 2) Top-nav: Right under top-bar which include search bar on the right and navbar on the left hand side
+ 3) An image which can be used as slider as well. 
+ 4) Main Section: The main part of the page under HEADER and above FOOTER sections
+ 5) .featured-product: The most popular product which shows under new items section. 
+ 6) Footer: The footer part includes: a) Short description, b) Vertical menu for some important links, c) Newsletter signup 
+
+
+ Main colors: #000  #fff    #00BADB     #F3F5F6
+ Sections backgrounds are in #F3F5F6 
+
+
+
+*  General Settings   *
+The main settings of the project, (fonts, sizes, colors and etc...).  
+**********************/
+body {
+    padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 img {
@@ -16,12 +42,13 @@ p {
     line-height: 2rem;
 }
 
+/* Container and flex-item are used to make a great space split and break-points. */ 
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    align-content: space-between;
+    justify-content: space-between;
+    
 }
 
 .flex-item {
@@ -39,6 +66,7 @@ h6 {
     font-family: 'Rubik', sans-serif;
 }
 
+/* Solving mixed up div elemnts with different float values.  */
 .clearfix {
     content: "";
     clear: both;
@@ -57,7 +85,35 @@ hr {
     width: 80%;
 }
 
-/* Header settings */
+/* Order button at featured-product section */
+.btn-order {
+    background-color: #00BADB;
+    border: 0;
+    box-shadow: 0;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    width: 26%;
+}
+.btn-order:hover {
+    cursor: pointer;
+    background-color: #00adcc;
+}
+
+.btn-order:active {
+    background-color: #0098b3;
+    width: 26.2%;
+}x
+
+
+/**************************
+*  General Settings Ends  *
+**************************/
+
+
+/**********************
+*  Header Settings   *
+**********************/
 
 .drop-down-menu {
     display: none;
@@ -68,6 +124,7 @@ hr {
     color: white;
     width: 100%;
     padding: 15px 10px;
+    font-size: 0.9rem;
 }
 
 .topbar h4 {
@@ -79,9 +136,10 @@ hr {
     background-color: #4B5CF3;
 }
 
-.fas {
-    margin-bottom: -5px;
-}
+
+/**********************
+*  Navbar Settings    *
+**********************/
 
 .navbar {
     width: 80%;
@@ -92,15 +150,18 @@ hr {
     margin: auto 8px;
 }
 
-.navbar > ul > li:hover {
-    background-color: #4052f2; 
+.navbar>ul>li:hover {
+    background-color: #4052f2;
 }
 
-.navbar  ul  li  a {
+.navbar ul li a {
     color: white;
 }
 
-/* DropDown Menu */
+/**********************
+*  DropDown Settings   *
+**********************/
+
 .navbar ul {
     background: #4B5CF3;
     list-style: none;
@@ -164,7 +225,14 @@ hr {
 
 
 
-/* End of DropDown */
+/****************************
+*  DropDown Settings Ends   *
+****************************/
+
+
+/****************************
+*  Search Bar Settings      *
+****************************/
 
 .search {
     margin-top: 15px;
@@ -195,21 +263,41 @@ hr {
     background-size: cover;
 }
 
-/* Main Section */
+/****************************
+*  Search Bar Settings Ends *
+****************************/
+
+/****************************
+*  Navbar Settings Ends     *
+****************************/
+
+/****************************
+*  Main Section Settings    *
+****************************/
+
+.top-items {
+    width: 100%;
+    padding: auto;
+}
+
 .box-group {
     background-color: #F3F5F6;
-    width: 100%;
-    margin: auto;
     padding: 30px;
 }
 
-/* Product Box */
+.products {
+    width: 90%;
+    margin: auto;
+}
+
+
 .product-box {
     overflow: auto;
     width: 25%;
+    margin: 10px;
     display: inline-block;
     background-color: white;
-    margin: 20px;
+    
     padding: 20px;
 }
 
@@ -231,7 +319,7 @@ hr {
 .price {
     font-size: 1.2rem;
     color: #00BADB;
-    text-align: left;
+    text-align: right;
 }
 
 .product-title {
@@ -239,7 +327,9 @@ hr {
     text-align: left;
 }
 
-/* Featured Product */
+/************************************
+*  Featured Product Settings        *
+************************************/
 
 .featured-product {
     background-color: #F3F5F6;
@@ -278,23 +368,76 @@ hr {
 }
 
 
-/* Order button at featured-product section */
-.btn-order {
-    background-color: #00BADB;
-    border: 0;
-    box-shadow: 0;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    width: 26%;
+
+
+
+
+
+/* Featured Products  */
+
+.row {
+    width: 100%;
 }
 
-.btn-order:hover {
+.column {
+    float: left;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column img {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.product-info {
+    margin-left: 10%;
+    padding-left: 20px;
+}
+
+/****************************
+*  Footer Settings          *
+****************************/
+
+footer {
+    background-color: #F3F5F6;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: black;
+}
+
+footer input[type="text"] {
+    width: 60%;
+    min-height: 1.5rem;
+}
+
+footer input[type="submit"] {
+    width: 20%;
+    min-height: 1.5rem;
+    background-color: #00BADB;
+    color: #fff;
+    border: 0;
+    margin-left: -4px;
     cursor: pointer;
+
+}
+
+footer input[type="submit"]:hover {
     background-color: #00adcc;
 }
 
-.btn-order:active {
+footer input[type="submit"]:active {
     background-color: #0098b3;
-    width: 26.2%;
 }
