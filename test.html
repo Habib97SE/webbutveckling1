@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            width: 90%;
+            margin: auto;
+            background-color: #F3F5F6;
+        }
+
+        .product-box {
+            overflow: auto;
+            width: 25%;
+            display: inline-block;
+            background-color: white;
+        }
+
+        .post-container::after {
+            content: "";
+            clear: both;
+        }
+
+        .product-thumb {
+            float: left
+        }
+
+        .post-thumb img {
+            display: inline-block;
+            width: 40%;
+            padding-left: 10%;
+        }
+        .price {
+            font-size: 1.2rem;
+            color: #00BADB;
+            text-align: left;
+        }
+        
+        .product-title {
+            font-weight: bold;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-box">
+        <div class="product-thumb"><img src="images/bok-omslag.jpg" /></div>
+        <div class="post-content">
+            <h3 class="post-title">Jag kan ha fel och andra visdomar </h3>
+            <p class="price">244 kr</p>
+        </div>
+    </div>
+    <div class="post-container">
+        <div class="product-thumb"><img src="images/bok-omslag.jpg" /></div>
+        <div class="product-info">
+            <h3 class="product-title">Jag kan</h3>
+            <p class="product-price">244 kr</p>
+        </div>
+    </div>
+    <div class="post-container">
+        <div class="post-thumb"><img src="images/bok-omslag.jpg" /></div>
+        <div class="post-content">
+            <h3 class="post-title">Jag kan</h3>
+            <p class="price">244 kr</p>
+        </div>
+    </div>
+    <div class="post-container">
+        <div class="post-thumb"><img src="images/bok-omslag.jpg" /></div>
+        <div class="post-content">
+            <h3 class="post-title">Jag kan</h3>
+            <p class="price">244 kr</p>
+        </div>
+    </div>
+    <div class="post-container">
+        <div class="post-thumb"><img src="images/bok-omslag.jpg" /></div>
+        <div class="post-content">
+            <h3 class="post-title">Jag kan</h3>
+            <p class="price">244 kr</p>
+        </div>
+    </div>
+    <div class="post-container">
+        <div class="post-thumb"><img src="images/bok-omslag.jpg" /></div>
+        <div class="post-content">
+            <h3 class="post-title">Jag kan</h3>
+            <p class="price">244 kr</p>
+        </div>
+    </div>
+</body>
+
+</html>
