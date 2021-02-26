@@ -1,5 +1,5 @@
 body {
-    padding: 0;
+
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -85,15 +85,85 @@ hr {
 }
 
 .navbar ul li {
-    display: inline-block;
     list-style-type: none;
     margin: auto 8px;
-
 }
 
-.navbar ul li a {
+.navbar > ul > li:hover {
+    background-color: #4052f2; 
+}
+
+.navbar  ul  li  a {
     color: white;
 }
+
+/* DropDown Menu */
+ul {
+    background: #4B5CF3;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    background: #4B5CF3;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: #fff;
+}
+
+li:hover {
+    background: #4052f2;
+    cursor: pointer;
+}
+
+ul li ul {
+    background: #F1F1F1;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li ul li {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+ul li ul li:hover {
+    background-color: #666666;
+}
+
+ul li ul li a:hover {
+    color: #000;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+
+/* End of DropDown */
 
 .search {
     margin-top: 15px;
