@@ -103,7 +103,20 @@ hr {
 .btn-order:active {
     background-color: #0098b3;
     width: 26.2%;
-}x
+}
+
+.btn-cart {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 4px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color: #4d4d4d;
+}
 
 
 /**************************
@@ -266,6 +279,46 @@ hr {
 /****************************
 *  Search Bar Settings Ends *
 ****************************/
+/*******************************
+*  Shopping cart Settings Ends *
+********************************/
+
+.fa-shopping-cart {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.fa-shopping-cart:hover {
+    color: #bfbfbf;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .cart-content {
+    visibility: hidden;
+    width: 200px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    line-height: 2;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .cart-content {
+    visibility: visible;
+  }
+
+
 
 /****************************
 *  Navbar Settings Ends     *
@@ -283,6 +336,7 @@ hr {
 .box-group {
     background-color: #F3F5F6;
     padding: 30px;
+    margin: 3rem auto;
 }
 
 .products {
@@ -380,6 +434,7 @@ hr {
 
 footer {
     background-color: #F3F5F6;
+    
 }
 
 footer ul li {
@@ -418,6 +473,12 @@ footer input[type="submit"]:active {
 *  Footer Settings ENDS     *
 ****************************/
 
+
+/********************************
+*  Category Settings BEGINS     *
+*********************************/
+
+
 /****************************
 *  Book Facts Settings      *
 ****************************/
@@ -432,4 +493,40 @@ footer input[type="submit"]:active {
     background-color: #F3F5F6;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+/********************************
+*  Category Page Settings ENDS       *
+*********************************/
+
+/********************************
+*  Product Page Settings BEGINS      *
+*********************************/
+.map {
+    padding-left: 30px;
+    font-size: 0.8rem;
+}
+
+.product-description  {
+    width: 50%; 
+}
+.product-description p {
+    padding: 30px;
+}
+
+.product-description ul li {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.product-related-books-title {
+    padding-left: 30px;
+}
+
+.product-related-books .flex-item {
+    text-align: center;
+}
+
+.product-related-books .price {
+    text-align: center;
 }
