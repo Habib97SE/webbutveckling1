@@ -85,6 +85,10 @@ h6 {
     float: right;
 }
 
+.center {
+    text-align: center;
+}
+
 hr {
     width: 80%;
 }
@@ -540,3 +544,46 @@ footer input[type="submit"]:active {
 .product-related-books .price {
     text-align: center;
 }
+
+/********************************
+*  Product Page Settings ENDS   *
+*********************************/
+
+/********************************
+*  Contact Page Settings BEGINS *
+*********************************/
+
+.contact-us img {
+    width: 100%;
+}
+
+.contact-us .column {
+    text-align: center;
+}
+
+.contact-us p {
+    text-align: center;
+}
+
+.contact-us input[type="text"], textarea {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: calc(15px * 1.3rem);
+    font-weight: 300;
+    padding: 15px;
+    border: 0;
+}
+
+.contact-us input[type="text"] {
+    min-height: 2rem;
+
+}
+
+.contact-us-link:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+/********************************
+*  Contact Page Settings ENDS   *
+*********************************/
