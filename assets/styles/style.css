@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #000;
+}
+
 p {
     line-height: 2rem;
 }
@@ -95,6 +99,11 @@ hr {
     font-size: 1.2rem;
     width: 26%;
 }
+
+.btn-order a {
+    color: #fff;
+}
+
 .btn-order:hover {
     cursor: pointer;
     background-color: #00adcc;
@@ -353,6 +362,7 @@ hr {
     background-color: white;
     padding: 20px;
 }
+
 
 .post-content::after {
     content: "";
