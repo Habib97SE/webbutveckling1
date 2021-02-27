@@ -69,8 +69,8 @@
                         <nav>
                             <ul class="dropdown">
                                 <li><a href="index.html">Hem</a></li>
-                                <li><a href="index.html" class="dropdownbtn">Böcker <i onfocus="changeArrow()"
-                                            class="fas fa-angle-down"></i></a>
+                                <li><a href="index.html" class="dropdownbtn">Böcker <i" class="fas fa-angle-down"></i>
+                                            </i></a>
                                     <ul class="dropdown">
                                         <li><a href="category.html">Datavetenskap</a></li>
                                         <li><a href="category.html">Nationalekonomi</a></li>
@@ -102,10 +102,7 @@
         //
     -->
         </div>
-        <div class="slide">
-            <!-- hERE WE CAN ADD MORE SLIDES -->
 
-        </div>
     </header>
     <!-- 
         //
@@ -117,103 +114,54 @@
         MAIN SECTION BEGINS
         //
     -->
+
     <main>
-        <section class="top-items">
-            <div class="category-title-group">
-                <h1>Kategori: Datavetenskap </h1>
-                <h4>Det finns 6 böcker i den här kategorin</h4>
-            </div>
-            <div class="">
-                <div class="product-box">
-                    <a href="product.html">
-                        <div class="product-thumb"><img src="images/informationssakerhet.jpg"
-                                alt="Informationssäkerhet" />
-                        </div>
-                        <div class="post-content">
-                            <h3 class="post-title">Informations säkerhet </h3>
-                            <ul class="book-facts">
-                                <li>Från Per Oscarson </li>
-                                <li>ISBN: 9789144121109 </li>
-                                <li>Bokförlag: Studentlitteratur</li>
-                            </ul>
-                            <p class="price">390 kr</p>
-                        </div>
-                    </a>
+        <section class="box-group contact-us">
+            <h1 class="center">Checkout</h1>
+            <p class="center">
+                Skriv din leverans adress.
+            </p>
+            <form action="index.html" method="POST">
+                <div class="full">
+                    <input type="text" placeholder="Mejl adress" name="email">
                 </div>
-                <div class="product-box">
-                    <a href="product.html">
-                        <div class="product-thumb"><img src="images/systemutveckling.jpg"
-                                alt="Att arbeta med systemutveckling" /></div>
-                        <div class="post-content">
-                            <h3 class="post-title">Att arbeta med systemutveckling</h3>
-                            <ul class="book-facts">
-                                <li>Från Tomas Gustavsson </li>
-                                <li>ISBN: 9789144125206 </li>
-                                <li>Bokförlag: Studentlitteratur</li>
-                            </ul>
-                            <p class="price">311 kr</p>
-                        </div>
-                    </a>
-                </div>
-                <div class=" product-box">
-                    <div class="product-thumb"><img src="images/enterprisesystem.jpg"
-                            alt="Enterprise System Platforms" /></div>
-                    <div class="post-content">
-                        <h3 class="post-title">Enterprise System Platforms</h3>
-                        <ul class="book-facts">
-                            <li>Från Johan Magnusson </li>
-                            <li>ISBN: 9789144096704 </li>
-                            <li>Bokförlag: Studentlitteratur</li>
-                        </ul>
-                        <p class="price">244 kr</p>
+                <div class="beside-col-parent">
+                    <div class="beside-col">
+                        <input type="text" placeholder="Förnamn" name="fname">
+                    </div>
+                    <div class="beside-col">
+                        <input type="text" placeholder="Efternamn" name="lname">
                     </div>
                 </div>
-                <div class="product-box">
-                    <a href="product.html">
-                        <div class="product-thumb"><img src="images/Informationsystem.jpg"
-                                alt="Essentials of Information Systems" /></div>
-                        <div class="post-content">
-                            <h3 class="post-title">Essentials of Information Systems</h3>
-                            <ul class="book-facts">
-                                <li>Från Jonas Floden </li>
-                                <li>ISBN: 9789144123486 </li>
-                                <li>Bokförlag: Studentlitteratur</li>
-                            </ul>
-                            <p class="price">299 kr</p>
-                        </div>
-                    </a>
+                <div class="full">
+                    <input type="text" class="full" placeholder="Gatunamn och nummer" name="street">
                 </div>
-                <div class=" product-box">
-                    <a href="product.html">
-                        <div class="product-thumb"><img src="images/itsystem.jpg" alt="Utveckling av IT-system" /></div>
-                        <div class="post-content">
-                            <h3 class="post-title">Utveckling av IT-system</h3>
-                            <ul class="book-facts">
-                                <li>Från Lars Wiktorin </li>
-                                <li>ISBN: 9789144120973 </li>
-                                <li>Bokförlag: Studentlitteratur</li>
-                            </ul>
-                            <p class="price">366 kr</p>
-                        </div>
-                    </a>
+                <div class="full">
+                    <input type="text" class="full" placeholder="Lägenhetsnummer/ byggnad" name="apartment">
                 </div>
-                <div class=" product-box">
-                    <a href="product.html">
-                        <div class="product-thumb"><img src="images/berakning.jpg" alt="Tänkande och beräkning" /></div>
-                        <div class="post-content">
-                            <h3 class="post-title">Tänkande och beräkning</h3>
-                            <ul class="book-facts">
-                                <li>Från Lars-Erik Janlert </li>
-                                <li>ISBN: 9789144110226</li>
-                                <li>Bokförlag: Studentlitteratur</li>
-                            </ul>
-                            <p class="price">311 kr</p>
-                        </div>
-                    </a>
+                <br>
+                <div class="beside-col-parent">
+                    <div class="beside-col">
+                        <input type="text" placeholder="Postnummer" name="postalcode">
+                    </div>
+                    <div class="beside-col">
+                        <input type="text" placeholder="Stad" name="city">
+                    </div>
                 </div>
-            </div>
+                <br>
+                <div class="beside-col-parent">
+                    <div class="beside-col">
+                        <input type="checkbox" name="agreement" id="agreement"> <label for="agreement">Jag godkänner
+                            villkor.</label>
+                    </div>
+                    <div class="beside-col btn-pay">
+                        <input type="submit" value="Skicka" class="btn-order" name="submit">
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
+
     <!-- 
         //
         MAIN SECTION ENDS

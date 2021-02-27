@@ -46,13 +46,13 @@ p {
     line-height: 2rem;
 }
 
-/* Container and flex-item are used to make a great space split and break-points. */ 
+/* Container and flex-item are used to make a great space split and break-points. */
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
 }
 
 .flex-item {
@@ -97,7 +97,7 @@ hr {
 .btn-order {
     background-color: #00BADB;
     border: 0;
-    box-shadow: 0;
+    box-shadow: none;
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -306,13 +306,14 @@ hr {
 .fa-shopping-cart:hover {
     color: #bfbfbf;
 }
+
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
-  }
-  
-  .tooltip .cart-content {
+}
+
+.tooltip .cart-content {
     visibility: hidden;
     width: 200px;
     background-color: #fff;
@@ -321,15 +322,15 @@ hr {
     border-radius: 6px;
     padding: 10px;
     line-height: 2;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-  }
-  
-  .tooltip:hover .cart-content {
+}
+
+.tooltip:hover .cart-content {
     visibility: visible;
-  }
+}
 
 
 
@@ -343,7 +344,7 @@ hr {
 
 .top-items {
     width: 100%;
-    padding: auto;
+
 }
 
 .box-group {
@@ -448,7 +449,7 @@ hr {
 
 footer {
     background-color: #F3F5F6;
-    
+
 }
 
 footer ul li {
@@ -521,9 +522,10 @@ footer input[type="submit"]:active {
     font-size: 0.8rem;
 }
 
-.product-description  {
-    width: 50%; 
+.product-description {
+    width: 50%;
 }
+
 .product-description p {
     padding: 30px;
 }
@@ -565,10 +567,11 @@ footer input[type="submit"]:active {
     text-align: center;
 }
 
-.contact-us input[type="text"], textarea {
+.contact-us input[type="text"],
+textarea {
     width: 80%;
     margin: 2rem auto;
-    font-size: calc(15px * 1.3rem);
+    font-size: calc(15px * 1.3);
     font-weight: 300;
     padding: 15px;
     border: 0;
@@ -586,4 +589,49 @@ footer input[type="submit"]:active {
 
 /********************************
 *  Contact Page Settings ENDS   *
+*********************************/
+
+
+/********************************
+*  Checkout Page Settings ENDS   *
+*********************************/
+
+.checkout-page .row {
+    width: 100%;
+}
+
+.checkout-page .row::after {
+    content: "";
+    clear: both;
+}
+
+.full {
+    width: 80%;
+    margin: auto;
+}
+
+.beside-col-parent {
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.beside-col {
+    width: 49%;
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.beside-col input[type="text"] {
+    width: 63%;
+}
+
+.btn-pay {
+    text-align: center;
+}
+
+
+/********************************
+*  Checkout Page Settings ENDS   *
 *********************************/
