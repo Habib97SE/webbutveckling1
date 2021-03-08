@@ -1,0 +1,617 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #000;
+    }
+
+    p {
+        line-height: 2rem;
+    }
+
+    /* Container and flex-item are used to make a great space split and break-points. */
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .flex-item {
+        flex-grow: 1;
+        flex-basis: auto;
+        align-self: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Rubik', sans-serif;
+    }
+
+    /* Solving mixed up div elemnts with different float values.  */
+    .clearfix {
+        content: "";
+        clear: both;
+        overflow: auto;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    /* Order button at featured-product section */
+    .btn-order {
+        background-color: #00BADB;
+        border: 0;
+        box-shadow: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        width: 26%;
+    }
+
+    .btn-order a {
+        color: #fff;
+    }
+
+    .btn-order:hover {
+        cursor: pointer;
+        background-color: #00adcc;
+    }
+
+    .btn-order:active {
+        background-color: #0098b3;
+        width: 26.2%;
+    }
+
+    .btn-cart {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 5px;
+        border-radius: 4px;
+        width: 90%;
+        cursor: pointer;
+    }
+
+    .btn-cart:hover {
+        background-color: #4d4d4d;
+    }
+
+
+    /**************************
+*  General Settings Ends  *
+**************************/
+
+
+    /**********************
+*  Header Settings   *
+**********************/
+
+    .drop-down-menu {
+        display: none;
+    }
+
+    .topbar {
+        background-color: #408FEC;
+        color: white;
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 0.9rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .topbar h4 {
+        width: 50%;
+        margin: auto;
+    }
+
+    .topnav {
+        background-color: #4B5CF3;
+    }
+
+
+    /**********************
+*  Navbar Settings    *
+**********************/
+
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar>ul>li {
+        list-style-type: none;
+        max-width: 10px;
+    }
+
+    .navbar>ul>li:hover {
+        background-color: #4052f2;
+    }
+
+    .navbar ul li a {
+        color: white;
+    }
+
+    /**********************
+*  DropDown Settings   *
+**********************/
+
+    .navbar ul {
+        background: #4B5CF3;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .navbar li {
+        color: #fff;
+        background: #4B5CF3;
+        display: block;
+        float: left;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+
+    .navbar li a {
+        color: #fff;
+    }
+
+    .navbar li:hover {
+        background: #4052f2;
+        cursor: pointer;
+    }
+
+    .navbar ul li ul {
+        background: #4B5CF3;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+    }
+
+    .navbar ul li ul li {
+        color: #000;
+    }
+
+
+
+    .navbar ul li ul li a:hover {
+        color: #000;
+    }
+
+    .navbar ul li:hover>ul,
+    .navbar ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    .navbar ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+
+
+    /****************************
+*  DropDown Settings Ends   *
+****************************/
+
+
+    /****************************
+*  Search Bar Settings      *
+****************************/
+
+    .search {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search input[type="text"] {
+
+        width: 50%;
+        height: 15%;
+        margin-right: 0;
+    }
+
+    .search input[type="submit"] {
+        background-color: #66DCE3;
+        color: white;
+        border: 0;
+        height: 20px;
+        width: 10%;
+        margin-left: 0;
+    }
+
+    .slide {
+        height: 400px;
+        width: 100%;
+        background-image: url("../../images/header.jpg");
+        background-size: cover;
+    }
+
+    /****************************
+*  Search Bar Settings Ends *
+****************************/
+    /*******************************
+*  Shopping cart Settings Ends *
+********************************/
+
+    .fa-shopping-cart {
+        color: white;
+        font-size: 1.4rem;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+
+    .fa-shopping-cart:hover {
+        color: #bfbfbf;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        margin-right: 30%;
+    }
+
+    .tooltip .cart-content {
+        visibility: hidden;
+        width: 200px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        border-radius: 6px;
+        line-height: 2;
+
+        /* Position the tooltip */
+        position: absolute;
+        margin-right: 30%;
+        z-index: 2;
+    }
+
+    .cart-content {
+        margin-right: 30%;
+    }
+
+    .tooltip:hover .cart-content {
+        visibility: visible;
+    }
+
+
+
+    /****************************
+*  Navbar Settings Ends     *
+****************************/
+
+    /****************************
+*  Main Section Settings    *
+****************************/
+
+    .top-items {
+        width: 100%;
+
+    }
+
+    .box-group {
+        background-color: #F3F5F6;
+        padding: 30px;
+        margin: 3rem auto;
+    }
+
+    .products {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    .product-box {
+        overflow: auto;
+        width: 40%;
+        margin: 20px;
+        display: inline-block;
+        background-color: white;
+        padding: 20px;
+    }
+
+
+    .post-content::after {
+        content: "";
+        clear: both;
+    }
+
+    .product-thumb {
+        float: left
+    }
+
+    .product-thumb img {
+        display: inline-block;
+        width: 40%;
+        padding-left: 10%;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        color: #00BADB;
+        text-align: right;
+    }
+
+    .product-title {
+        font-weight: bold;
+        text-align: left;
+    }
+
+    /************************************
+*  Featured Product Settings        *
+************************************/
+
+    .product-info {
+        border-left: 1px solid black;
+        padding-left: 3rem;
+    }
+
+    .product-info h2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .top-items,
+    .new-items,
+    .featured-product {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+
+    .row {
+        width: 100%;
+    }
+
+    .column {
+        float: left;
+        width: 40%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column img {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .product-info {
+        margin-left: 10%;
+        padding-left: 20px;
+    }
+
+    /****************************
+*  Footer Settings          *
+****************************/
+
+    footer {
+        background-color: #F3F5F6;
+
+    }
+
+    footer ul li {
+        list-style-type: none;
+    }
+
+    footer ul li a {
+        color: black;
+    }
+
+    footer input[type="text"] {
+        width: 60%;
+        min-height: 1.5rem;
+    }
+
+    footer input[type="submit"] {
+        width: 20%;
+        min-height: 1.5rem;
+        background-color: #00BADB;
+        color: #fff;
+        border: 0;
+        margin-left: -4px;
+        cursor: pointer;
+
+    }
+
+    footer input[type="submit"]:hover {
+        background-color: #00adcc;
+    }
+
+    footer input[type="submit"]:active {
+        background-color: #0098b3;
+    }
+
+    /****************************
+*  Footer Settings ENDS     *
+****************************/
+
+
+    /********************************
+*  Category Settings BEGINS     *
+*********************************/
+
+
+    /****************************
+*  Book Facts Settings      *
+****************************/
+
+    .book-facts {
+        list-style-type: none;
+        line-height: 1.5;
+    }
+
+    .category-title-group {
+        padding-left: 30px;
+        background-color: #F3F5F6;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /********************************
+*  Category Page Settings ENDS       *
+*********************************/
+
+    /********************************
+*  Product Page Settings BEGINS      *
+*********************************/
+    .map {
+        padding-left: 30px;
+        font-size: 0.8rem;
+    }
+
+    .product-description {
+        width: 50%;
+    }
+
+    .product-description p {
+        padding: 30px;
+    }
+
+    .product-description ul li {
+        list-style-type: none;
+        line-height: 2;
+    }
+
+    .product-related-books-title {
+        padding-left: 30px;
+    }
+
+    .product-related-books .flex-item {
+        text-align: center;
+    }
+
+    .product-related-books .price {
+        text-align: center;
+    }
+
+    /********************************
+*  Product Page Settings ENDS   *
+*********************************/
+
+    /********************************
+*  Contact Page Settings BEGINS *
+*********************************/
+
+    .contact-us img {
+        width: 100%;
+    }
+
+    .contact-us .column {
+        text-align: center;
+    }
+
+    .contact-us p {
+        text-align: center;
+    }
+
+    .contact-us input[type="text"],
+    textarea {
+        width: 80%;
+        margin: 2rem auto;
+        font-size: calc(15px * 1.3);
+        font-weight: 300;
+        padding: 15px;
+        border: 0;
+    }
+
+    .contact-us input[type="text"] {
+        min-height: 2rem;
+
+    }
+
+    .contact-us-link:hover {
+        padding-bottom: 3px;
+        border-bottom: 1px solid #000;
+    }
+
+    /********************************
+*  Contact Page Settings ENDS   *
+*********************************/
+
+
+    /********************************
+*  Checkout Page Settings ENDS   *
+*********************************/
+
+    .checkout-page .row {
+        width: 100%;
+    }
+
+    .checkout-page .row::after {
+        content: "";
+        clear: both;
+    }
+
+    .full {
+        width: 80%;
+        margin: auto;
+    }
+
+    .beside-col-parent {
+        width: 80%;
+        margin-left: 10%;
+
+    }
+
+    .beside-col {
+        width: 49%;
+        margin: auto;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .beside-col input[type="text"] {
+        width: 63%;
+    }
+
+    .btn-pay {
+        text-align: center;
+    }
+
+
+
+    /********************************
+*  Checkout Page Settings ENDS   *
+*********************************/
+}
