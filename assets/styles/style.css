@@ -17,14 +17,144 @@
  */
 
 body {
-    padding: 0;
-    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
+a {
+    text-decoration: none;
 }
 
-img {
-    max-width: 100%;
+a:visited {
+    color: #000;
+}
+
+p {
+    line-height: 2rem;
+}
+
+/* Container and flex-item are used to make a great space split and break-points. */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.flex-item {
+    flex-grow: 1;
+    flex-basis: auto;
+    align-self: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Solving mixed up div elemnts with different float values.  */
+.clearfix {
+    content: "";
+    clear: both;
+    overflow: auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+}
+
+/* Order button at featured-product section */
+.btn-order {
+    background-color: #00BADB;
+    border: 0;
+    box-shadow: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    min-width: 26%;
+}
+
+.btn-order a {
+    color: #fff;
+}
+
+.btn-order:hover {
+    cursor: pointer;
+    background-color: #00adcc;
+}
+
+.btn-order:active {
+    background-color: #0098b3;
+    width: 26.2%;
+}
+
+.btn-cart {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 4px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color: #4d4d4d;
+}
+
+
+/**************************
+*  General Settings Ends  *
+**************************/
+/**********************
+*  Header Settings   *
+**********************/
+
+.drop-down-menu {
+    display: none;
+}
+
+.topnav {
+    background-color: #4B5CF3;
+}
+
+/**********************
+*  Navbar Settings    *
+**********************/
+
+.navbar {
+    width: 100%;
+}
+
+.navbar>ul>li {
+    list-style-type: none;
+    max-width: 10px;
+}
+
+.navbar>ul>li:hover {
+    background-color: #4052f2;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.navbar ul {
+    background-color: #4B5CF3;
+    list-style: none;
 }

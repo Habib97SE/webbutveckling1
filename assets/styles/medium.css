@@ -1,9 +1,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     body {
         font-family: 'Ubuntu', sans-serif;
     }
-
 
     a {
         text-decoration: none;
@@ -72,7 +71,7 @@
         color: white;
         padding: 10px 20px;
         font-size: 1.2rem;
-        width: 26%;
+        min-width: 26%;
     }
 
     .btn-order a {
@@ -141,7 +140,7 @@
 **********************/
 
     .navbar {
-        width: 80%;
+        width: 100%;
     }
 
     .navbar>ul>li {

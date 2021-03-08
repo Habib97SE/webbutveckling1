@@ -1,5 +1,5 @@
 /* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
 
     body {
         padding: 0;
