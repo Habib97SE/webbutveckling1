@@ -198,6 +198,11 @@
         padding: 20px;
     }
 
+    .product-box:hover {
+        border-bottom: 1px solid gray;
+    }
+
+
     /************************************
 *  Featured Product Settings        *
 ************************************/
@@ -356,11 +361,14 @@
     /********************************
 *  Checkout Page Settings ENDS   *
 *********************************/
+    form {
+        margin: auto;
+    }
 
     .beside-col-parent {
         width: 80%;
-        margin-left: 10%;
-
+        /* margin-left: 10%; */
+        margin: auto;
     }
 
     .beside-col {

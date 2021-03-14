@@ -1,5 +1,5 @@
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 750px) and (max-width: 991px) {
 
 
     /* Container and flex-item are used to make a great space split and break-points. */
@@ -54,6 +54,9 @@
         text-align: center;
     }
 
+    .topbar h4 {
+        display: inline-block;
+    }
 
 
     /**********************
@@ -191,7 +194,7 @@
 
     .product-box {
         width: 40%;
-        margin: 20px;
+        margin: 10px;
         padding: 20px;
     }
 
@@ -378,6 +381,10 @@
 
     .beside-col input[type="text"] {
         width: 63%;
+    }
+
+    .btn-pay {
+        margin-bottom: 3vh;
     }
 
     /********************************

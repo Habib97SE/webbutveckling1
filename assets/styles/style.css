@@ -111,7 +111,7 @@ hr {
 }
 
 .topbar h4 {
-    /* margin: auto; */
+    margin: auto;
 }
 
 /***********************
@@ -128,6 +128,7 @@ hr {
 }
 
 .navbar>ul>li:hover {
+    color: white;
     background-color: #4052f2;
     cursor: pointer;
 }
@@ -214,6 +215,10 @@ hr {
     background-color: white;
 }
 
+.product-box:hover {
+    border-bottom: 1px solid gray;
+}
+
 .post-content::after {
     content: "";
     clear: both;
@@ -266,8 +271,13 @@ footer ul li {
     list-style-type: none;
 }
 
+footer ul li a:hover {
+    border-bottom: 1px solid black;
+}
+
 footer ul li a {
     color: black;
+    line-height: 2;
 }
 
 /****************************
@@ -332,4 +342,5 @@ footer ul li a {
 
 .btn-pay {
     text-align: center;
+
 }

@@ -51,7 +51,9 @@
         text-align: center;
     }
 
-
+    .topbar h4 {
+        display: inline-block;
+    }
 
     .topbar h4:nth-child(even)::before,
     .topbar h4:nth-child(even)::after {
@@ -285,7 +287,7 @@
     }
 
     .product-description {
-        width: 50%;
+        width: 70%;
     }
 
     .product-description p {
