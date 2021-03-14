@@ -21,3 +21,315 @@ body {
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+p {
+    line-height: 2rem;
+}
+
+/* Container and flex-item are used to make a great space split and break-points. */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.flex-item {
+    flex-grow: 1;
+    flex-basis: auto;
+    align-self: auto;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Solving mixed up div elemnts with different float values.  */
+.clearfix {
+    content: "";
+    clear: both;
+    overflow: auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+}
+
+.btn-cart {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 4px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color: #4d4d4d;
+}
+
+/**************************
+*  General Settings Ends  *
+**************************/
+/**********************
+*  Header Settings   *
+**********************/
+
+.drop-down-menu {
+    display: none;
+}
+
+.topnav {
+    background-color: #4B5CF3;
+}
+
+.topbar h4 {
+    /* margin: auto; */
+}
+
+/***********************
+*    Navbar Settings   *
+***********************/
+
+.navbar {
+    max-width: 100%;
+}
+
+.navbar>ul>li {
+    list-style-type: none;
+    background: #4B5CF3;
+}
+
+.navbar>ul>li:hover {
+    background-color: #4052f2;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.navbar ul {
+    background-color: #4B5CF3;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+/**********************
+*   DropDown Settings *
+**********************/
+
+.navbar ul li ul {
+    background: #4B5CF3;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+
+.slide {
+    width: 100%;
+    height: 40vh;
+    background-image: url("../../images/header.jpg");
+    background-size: cover;
+}
+
+
+/****************************
+*  Search Bar Settings      *
+****************************/
+.search {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+/*********************************
+*  Ends Search Bar Settings      *
+**********************************/
+
+/*******************************
+*  Shopping cart Settings Ends *
+********************************/
+.fa-shopping-cart {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.fa-shopping-cart:hover {
+    color: #bfbfbf;
+}
+
+/****************************
+*  Search Bar Settings Ends *
+****************************/
+
+/****************************
+*  Navbar Settings Ends     *
+****************************/
+
+/****************************
+*  Main Section Settings    *
+****************************/
+
+.box-group {
+    background-color: #F3F5F6;
+}
+
+.product-box {
+    overflow: auto;
+    display: inline-block;
+    background-color: white;
+}
+
+.post-content::after {
+    content: "";
+    clear: both;
+}
+
+.product-thumb {
+    float: left
+}
+
+.product-thumb img {
+    display: inline-block;
+    width: 40%;
+    padding-left: 10%;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #00BADB;
+    text-align: right;
+}
+
+.product-title {
+    font-weight: bold;
+    text-align: left;
+}
+
+/************************************
+*  Featured Product Settings        *
+************************************/
+
+.row {
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/****************************
+*      Footer Settings      *
+****************************/
+
+footer {
+    background-color: #F3F5F6;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: black;
+}
+
+/****************************
+*  Footer Settings ENDS     *
+****************************/
+
+/********************************
+*  Category Settings BEGINS     *
+*********************************/
+
+/****************************
+*  Book Facts Settings      *
+****************************/
+
+.book-facts {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+/********************************
+*  Category Page Settings ENDS  *
+*********************************/
+
+/********************************
+*  Contact Page Settings BEGINS *
+*********************************/
+
+.contact-us .column {
+    text-align: center;
+}
+
+.contact-us p {
+    text-align: center;
+}
+
+.contact-us-link:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+/********************************
+*  Contact Page Settings ENDS   *
+*********************************/
+
+/********************************
+*  Checkout Page Settings ENDS   *
+*********************************/
+
+.checkout-page .row {
+    width: 100%;
+}
+
+.checkout-page .row::after {
+    content: "";
+    clear: both;
+}
+
+.full {
+    width: 80%;
+    margin: auto;
+}
+
+.btn-pay {
+    text-align: center;
+}
