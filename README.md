@@ -3,6 +3,9 @@
 
 During this project, I used different techniques based on ONLY HTML5 & CSS3 to get things fixed.
 
+[Live Preview] (https://habib97se.github.io/webbutveckling1/)
+
+
 The project is an online e-commerce where the targets are people who study at unviersity or high school level who want to buy course litteratur books. 
 
 there are 5 different pages:
