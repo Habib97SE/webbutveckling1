@@ -1,5 +1,5 @@
-# webbutveckling1
-# My project in webbutveckling 1 (D0015D) course at Luleå Tekniska Högskola (Spring semester 2021)
+# webbutveckling1 (Web Development 1) course
+# My project in webbutveckling 1 (Web Development 1) (D0015D) course at Luleå Tekniska Högskola (Spring semester 2021)
 
 During this project, I used different techniques based on ONLY HTML5 & CSS3 to get things fixed.
 
